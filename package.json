@@ -1,5 +1,5 @@
 {
-  "name": "node-es6-template",
+  "name": "node-es6-module-template",
   "version": "0.0.1",
   "description": "node es6 module template",
   "main": "index.js",
