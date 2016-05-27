@@ -1,10 +1,10 @@
 {
   "name": "node-es6-module-template",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "node es6 module template",
   "main": "index.js",
   "scripts": {
-     "compile": "./node_modules/.bin/babel -d lib/ src/",
+    "compile": "./node_modules/.bin/babel -d lib/ src/",
     "test": "npm run compile && ./node_modules/.bin/mocha --compilers js:babel-core/register",
     "prepublish": "npm run compile"
   },
