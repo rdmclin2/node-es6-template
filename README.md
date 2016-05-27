@@ -1,8 +1,13 @@
 node-es6-template
 ======
-
 本文主要记录基于ES6的Nodejs模块项目初始化的过程,主要参考[ES2015 & babel 实战：开发 NPM 模块](http://morning.work/page/2015-11/es6-es7-develop-npm-module-using-babel.html)一文，原文比我写的详细的多，这里简略记录一下自己的配置过程，方便其他项目复制配置。项目文件详见[node-es6-template](https://github.com/rdmclin2/node-es6-template)
 <!-- more --> 
+
+本文主要配置项为:
+- 使用Babel为项目提供使用ES6的能力
+- 接入babel-preset-stage-3 以支持使用async/await
+- 加入Eslint以控制代码风格和质量
+- 加入mocha配置单元测试的es6环境
 
 # 初始化项目
 ```
@@ -64,7 +69,7 @@ $ npm install babel-eslint@6 --save-dev
 }
 ```
 
-# 创建基本文件结构
+# 基本文件结构
 新建`src`和`test`文件夹
 ```
 $ mkdir src test
@@ -106,7 +111,7 @@ describe('node-es6-template', () => {
 ```
 使用`npm test`进行测试
 
-# 发布模块配置
+# 编译
 在`package.json`中增加compile命令
 ```
 {
@@ -147,6 +152,7 @@ logs
 *.log
 npm-debug.log*
 coverage
+.DS_Store
 ```
 添加.npmignore取消源文件
 ```
@@ -160,7 +166,6 @@ src
   }
 }
 ```
-你可以
 
 # 善后
 为了开发环境一致在本地安装mocha和babel
