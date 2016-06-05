@@ -1,5 +1,25 @@
 node-es6-template
 ======
+# Usage
+```
+$ git clone git@github.com:rdmclin2/node-es6-template.git <your package name> && cd $_
+$ rm -rf .git
+$ echo "<your package name>" > README.md
+```
+Then modify the informations in package.json and create your repo in github, then
+```
+$ git init
+$ git remote add origin <your repo origin>
+$ git add .
+$ git commit -m "first commit"
+$ git push -u origin master
+$ npm publish
+```
+
+
+
+
+# Blog
 本文主要记录基于ES6的Nodejs模块项目初始化的过程,主要参考[ES2015 & babel 实战：开发 NPM 模块](http://morning.work/page/2015-11/es6-es7-develop-npm-module-using-babel.html)一文，原文比我写的详细的多，这里简略记录一下自己的配置过程，方便其他项目复制配置。项目文件详见[node-es6-template](https://github.com/rdmclin2/node-es6-template)
 <!-- more --> 
 
